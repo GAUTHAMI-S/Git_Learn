@@ -17,6 +17,8 @@ This guide is designed to help you learn Git through real-world scenarios, progr
 
     Add and commit it
 
+    
+
 
 
 ---------------------------------------------------------------------------
@@ -32,28 +34,35 @@ This guide is designed to help you learn Git through real-world scenarios, progr
     Commit with meaningful message
 
 
+    Comment : used git commit -p to view the changes and stage it.
+
+
 
 ---------------------------------------------------------------------------
 
 ## 3. Ignoring Files
 
-Scenario: Your project has node_modules/ and .env
+    Scenario: Your project has node_modules/ and .env
 
-Prevent them from being tracked
+    Prevent them from being tracked
 
+    Comment: Pattern used in .gitignore file have rules
+             If a specific file give exact name - like .env
+             if folder - add a slash at the end - like node_modules/.
+             if its a pattern - use wildcards - like *.log
+             
 
+---------------------------------------------------------------------------
 
----
+## 4. Viewing History
 
-4. Viewing History
+    Scenario: You want to check:
 
-Scenario: You want to check:
+    Who changed what
 
-Who changed what
+    Commit history in one line
 
-Commit history in one line
-
-Changes in a specific commit
+    Changes in a specific commit
 
 
 
