@@ -64,21 +64,28 @@ This guide is designed to help you learn Git through real-world scenarios, progr
 
     Changes in a specific commit
 
+    Comment: To view line by line change of the file use - git blame <filename>
+    if file is huge : you can narrow down by specifying a range - like git blame -L 100,200 <filename>
+    
+    To see commit history in a single line - git log --oneline
+    To see the changes in a specific commit - git show <commit hash>
+    
 
 
----
 
-🟡 LEVEL 2 — Branching & Workflow
+---------------------------------------------------------------------------
 
-5. Feature Branch
+## 🟡 LEVEL 2 — Branching & Workflow
 
-Scenario: You’re building a feature: login-page
+## 5. Feature Branch
 
-Create a new branch
+    Scenario: You’re building a feature: login-page
 
-Switch to it
+    Create a new branch
 
-Add code and commit
+    Switch to it
+
+    Add code and commit
 
 
 
