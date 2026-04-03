@@ -118,6 +118,18 @@ This guide is designed to help you learn Git through real-world scenarios, progr
 
     Delete the branch
 
+    Steps:
+        1. Switch to the main branch:
+        2. git checkout main
+        3. Merge the feature branch into main:
+        4. git merge feature/login
+        Delete the feature branch locally:
+        5. git branch -d feature/login
+        (Optional) Delete the feature branch from the remote:
+        6. git push origin --delete feature/login
+        
+
+
 
 
 ---------------------------------------------------------------------------
@@ -125,13 +137,13 @@ This guide is designed to help you learn Git through real-world scenarios, progr
 
 ## 8. Merge Conflict
 
-Scenario: Two branches modified the same line.
+    Scenario: Two branches modified the same line.
 
-Trigger a conflict
+    Trigger a conflict
 
-Resolve it manually
+    Resolve it manually
 
-Complete the merge
+    Complete the merge
 
 
 
