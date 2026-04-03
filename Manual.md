@@ -1,0 +1,418 @@
+## 🧩 Git Practical Scenarios (Hands-on Guide)
+
+This guide is designed to help you learn Git through real-world scenarios, progressing from beginner to advanced level.
+
+
+---------------------------------------------------------------------------
+
+## 🟢 LEVEL 1 — Basics (Foundation)
+
+## 1. Initialize & First Commit
+
+    Scenario: You just started a project with a name
+
+    Initialize a git repo
+
+    Create README.md
+
+    Add and commit it
+
+
+
+---------------------------------------------------------------------------
+
+## 2. Tracking Changes
+
+    Scenario: You added a file app.js and modified it twice.
+
+    Check status
+
+    Stage only specific changes
+
+    Commit with meaningful message
+
+
+
+---------------------------------------------------------------------------
+
+## 3. Ignoring Files
+
+Scenario: Your project has node_modules/ and .env
+
+Prevent them from being tracked
+
+
+
+---
+
+4. Viewing History
+
+Scenario: You want to check:
+
+Who changed what
+
+Commit history in one line
+
+Changes in a specific commit
+
+
+
+---
+
+🟡 LEVEL 2 — Branching & Workflow
+
+5. Feature Branch
+
+Scenario: You’re building a feature: login-page
+
+Create a new branch
+
+Switch to it
+
+Add code and commit
+
+
+
+---
+
+6. Switching Between Work
+
+Scenario: You’re halfway through login-page, but need to fix a bug in main.
+
+Switch branches safely
+
+
+
+---
+
+7. Merge Feature
+
+Scenario: Feature is complete.
+
+Merge login-page into main
+
+Delete the branch
+
+
+
+---
+
+8. Merge Conflict
+
+Scenario: Two branches modified the same line.
+
+Trigger a conflict
+
+Resolve it manually
+
+Complete the merge
+
+
+
+---
+
+🟠 LEVEL 3 — Intermediate (Real Developer Flow)
+
+9. Undo Mistakes
+
+Scenario: You accidentally staged a file.
+
+Unstage it
+
+
+Scenario: You committed something wrong.
+
+Undo last commit (keep changes)
+
+Undo completely
+
+
+
+---
+
+10. Amend Commit
+
+Scenario: You forgot to add a file in last commit.
+
+Add it to previous commit without creating new one
+
+
+
+---
+
+11. Stashing Work
+
+Scenario: You are working but suddenly need to switch branch.
+
+Save work temporarily
+
+Switch branch
+
+Come back and restore work
+
+
+
+---
+
+12. Multiple Stashes
+
+Scenario: You created multiple stashes.
+
+List them
+
+Apply a specific one
+
+Delete a stash
+
+
+
+---
+
+13. Selective Staging
+
+Scenario: One file has multiple changes, but you want to commit only some.
+
+Stage partially
+
+
+
+---
+
+🔵 LEVEL 4 — Advanced Git
+
+14. Rebase vs Merge
+
+Scenario: You want a clean history.
+
+Rebase feature branch onto main
+
+
+
+---
+
+15. Interactive Rebase
+
+Scenario: Your commits are messy.
+
+Combine commits
+
+Rename commit messages
+
+Remove unnecessary commits
+
+
+
+---
+
+16. Cherry Pick
+
+Scenario: You need a specific commit from another branch.
+
+Copy that commit into current branch
+
+
+
+---
+
+17. Reset vs Revert
+
+Scenario: You pushed a bad commit.
+
+Undo safely without rewriting history
+
+
+
+---
+
+18. Detached HEAD
+
+Scenario: You checkout a specific commit.
+
+Make changes
+
+Recover them properly
+
+
+
+---
+
+19. Git Reflog (Life Saver 🚨)
+
+Scenario: You lost a commit after reset.
+
+Recover it
+
+
+
+---
+
+🔴 LEVEL 5 — Collaboration (Team Environment)
+
+20. Remote Repository
+
+Scenario: Push your project to GitHub.
+
+Add remote
+
+Push code
+
+
+
+---
+
+21. Pull vs Fetch
+
+Scenario: Your teammate pushed changes.
+
+Fetch updates
+
+Merge manually
+
+
+
+---
+
+22. Handling Pull Conflicts
+
+Scenario: Your local changes conflict with remote.
+
+Resolve conflicts
+
+Complete pull
+
+
+
+---
+
+23. Force Push (Danger Zone ⚠️)
+
+Scenario: You rebased commits already pushed.
+
+Update remote safely
+
+
+
+---
+
+24. Working with Forks
+
+Scenario: You forked a repo.
+
+Sync with original repo
+
+
+
+---
+
+⚫ LEVEL 6 — Pro Level (Real Engineering Scenarios)
+
+25. Clean History Before PR
+
+Scenario: Before raising PR:
+
+Squash commits
+
+Make history readable
+
+
+
+---
+
+26. Bisect (Debugging Tool)
+
+Scenario: A bug was introduced somewhere.
+
+Find the exact commit
+
+
+
+---
+
+27. Hooks
+
+Scenario: Prevent bad commits.
+
+Add pre-commit hook
+
+
+
+---
+
+28. Submodules
+
+Scenario: Using another repo inside your project.
+
+
+---
+
+29. Large File Handling
+
+Scenario: You accidentally committed a large file.
+
+Remove it from history
+
+
+
+---
+
+30. Real-Life Scenario (🔥 MUST DO)
+
+Scenario: Simulate this workflow:
+
+1. Create feature branch
+
+
+2. Do multiple commits
+
+
+3. Stash halfway
+
+
+4. Switch branch for hotfix
+
+
+5. Merge hotfix
+
+
+6. Rebase feature branch
+
+
+7. Resolve conflicts
+
+
+8. Squash commits
+
+
+9. Merge to main
+
+
+10. Push to remote
+
+
+
+
+---
+
+💡 How to Use This
+
+Don’t just read — DO this:
+
+1. Create a dummy project
+
+
+2. Solve each scenario manually
+
+
+3. Break things intentionally
+
+
+4. Fix using Git
+
+
+
+
+
+
+
+
+
