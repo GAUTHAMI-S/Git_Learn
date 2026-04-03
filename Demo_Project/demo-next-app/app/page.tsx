@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <div>DEMO TEST APP</div>
+    <div className="text-center">DEMO TEST APP</div>
   );
 }
