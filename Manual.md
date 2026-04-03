@@ -64,49 +64,66 @@ This guide is designed to help you learn Git through real-world scenarios, progr
 
     Changes in a specific commit
 
-
-
----
-
-🟡 LEVEL 2 — Branching & Workflow
-
-5. Feature Branch
-
-Scenario: You’re building a feature: login-page
-
-Create a new branch
-
-Switch to it
-
-Add code and commit
+    Comment: To view line by line change of the file use - git blame <filename>
+    if file is huge : you can narrow down by specifying a range - like git blame -L 100,200 <filename>
+    
+    To see commit history in a single line - git log --oneline
+    To see the changes in a specific commit - git show <commit hash>
+    
 
 
 
----
+---------------------------------------------------------------------------
 
-6. Switching Between Work
+## 🟡 LEVEL 2 — Branching & Workflow
 
-Scenario: You’re halfway through login-page, but need to fix a bug in main.
+## 5. Feature Branch
 
-Switch branches safely
+    Scenario: You’re building a feature: login-page
+
+    Create a new branch
+
+    Switch to it
+
+    Add code and commit
+
+    Scenario:
+    After creating a new branch locally (e.g., feature/login-page), when trying to push it, you get an error: "This branch has no upstream branch."
+    Why it happens:
+    A new local branch isn't automatically linked to a remote branch. Git doesn't know where to push it.
+    Solution:
+    Use the command:
+    git push --set-upstream origin <branch-name>
+    This sets the remote branch as the upstream for your local branch. After this, a simple git push will work, and your branch will be tracked automatically.
+
+
+---------------------------------------------------------------------------
+
+## 6. Switching Between Work
+
+    Scenario: You’re halfway through login-page, but need to fix a bug in main.
+
+    Switch branches safely
+
+    Comment: git stash = stash every file change
+             afterwards - use git stash pop to pop the latest stash
+            
+---------------------------------------------------------------------------
+
+## 7. Merge Feature
+
+    Scenario: Feature is complete.
+
+    Merge login-page into main
+
+    Delete the branch
 
 
 
----
-
-7. Merge Feature
-
-Scenario: Feature is complete.
-
-Merge login-page into main
-
-Delete the branch
+---------------------------------------------------------------------------
 
 
-
----
-
-8. Merge Conflict
+## 8. Merge Conflict
 
 Scenario: Two branches modified the same line.
 
